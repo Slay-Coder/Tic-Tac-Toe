@@ -150,19 +150,12 @@ def checkifwon():
         if ans=="Yes":
             
             reset()
-        
-        
-
 def Quit():
     
     msg=messagebox.askquestion("Confirm","Do you want to Quit? You still have chances!")
     if msg=='yes':
         reset()
     
-        
-        
-        
-
 #Button clicking function
 def b_click(b):
     global clicked,count
@@ -180,19 +173,6 @@ def b_click(b):
     else:
         messagebox.showerror("Tic Tac Toe","That box has been already been selected.\n Pick another box")
 
-def darki():
-    b1 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="",command=lambda: b_click(b1))
-    b2 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b2))
-    b3 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b3))
-
-    b4 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b4))
-    b5 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b5))
-    b6 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b6))
-
-    b7 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b7))
-    b8 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b8))
-    b9 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b9))
-
 
 def reset():
     global b1,b2,b3,b4,b5,b6,b7,b8,b9
@@ -201,7 +181,7 @@ def reset():
     clicked=True
     count=0
 #Buttons  
-    b1 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="black",command=lambda: b_click(b1))
+    b1 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b1))
     b2 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b2))
     b3 = Button(root,text=" ",font=("Helvetica",20),height=3,width=6,bg="silver",command=lambda: b_click(b3))
 
