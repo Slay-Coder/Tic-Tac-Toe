@@ -134,7 +134,7 @@ def checkifwon():
         winner=True
         messagebox.showinfo("Tic Tac Toe","Congratulations!!!! o wins!!")
         disable_all_buttons()
-    elif count==5:
+    elif count==6:
         Quit()
         winner=False
     if winner==True:
@@ -147,7 +147,7 @@ def checkifwon():
         messagebox.showinfo("Tic Tac Toe","It's a tie :( ")
         disable_all_buttons()
         ans=messagebox.askquestion("Tic Tac Toe","Want to play again")
-        if ans=="Yes":
+        if ans=="yes":
             
             reset()
 def Quit():
